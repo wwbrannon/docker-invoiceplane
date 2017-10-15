@@ -17,7 +17,7 @@ services:
     command: app:invoiceplane
     environment:
     - DEBUG=false
-    - TZ=Asia/Kolkata
+    - TZ=America/New_York
 
     - DB_TYPE=mysqli
     - DB_HOST=mysql
@@ -25,7 +25,7 @@ services:
     - DB_PASS=password
     - DB_NAME=invoiceplane_db
 
-    - INVOICEPLANE_URL=http://invoice.example.com:10080
+    - INVOICEPLANE_URL=http://127.0.0.1:10080
     - INVOICEPLANE_BACKUPS_EXPIRY=0
     depends_on:
     - mysql
